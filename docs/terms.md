@@ -5,28 +5,15 @@ nav_order: 8
 
 # Terms and licence
 
-This page says what the game's licence says, what this tool does, and what
-that means for you. It is not legal advice.
+This page says what this tool reads, what it does and does not do, and what
+it writes.
 
-## Ubisoft's licence
+## What the tool reads
 
-The game installs its End-User Licence Agreement under
-`Support\eula\` (read on 2026-11-15 from `EULA-v1.0-UK.htm`). Clause 1.2:
-
-> You shall not, directly or indirectly (i) sell, rent out, lease, license,
-> distribute, market, exploit the Product or any of its parts commercially,
-> (ii) reverse engineer, decompile, disassemble, adapt, reproduce, or create
-> derivate works of this Product [...] in whole or in part; (iii) create, use
-> and/or distribute "auto", "trainer", "script" or "macro" computer programs
-> or other "cheat" or "hack" programs or software applications for this
-> Product [...]
-
-This tool reads your own installation, for interoperability (the 3DHeat
-viewer shows match replays on the map) and personal analysis, and builds
-level files on your machine. That is close to what clause 1.2 (ii) restricts.
-Some laws allow parts of such work regardless of a licence (in the EU, for
-example, for interoperability); whether that covers your use depends on where
-you live. **Decide for yourself whether to use this tool.**
+The files of your own installation of Rainbow Six Siege, read-only, from the
+folder you name. The 3DHeat viewer uses the levels to show your match replays
+on the map, for your personal analysis. Nothing from the game is shipped with
+this tool or its documentation: no game assets, no game code, no DLLs.
 
 **Not a cheat.** The tool never runs with the game, never reads its memory,
 never touches its anti-cheat or its network traffic, and changes nothing in
@@ -52,6 +39,11 @@ library, in the browser on this computer; it has no way to upload or share
 one.
 
 ## Notice and contact
+
+Each game reader is its own small project with its own licence file,
+releases and issue tracker, so it can be installed, updated, maintained - or
+withdrawn on a rights holder's request - on its own, without affecting the
+viewer or the other tools.
 
 Not affiliated with or endorsed by Ubisoft. Rainbow Six Siege and all other
 trademarks belong to their owners. The tool is meant for non-commercial use.

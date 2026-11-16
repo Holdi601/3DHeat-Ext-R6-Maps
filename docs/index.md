@@ -37,6 +37,11 @@ Siege, and an Oodle library from software you have installed - see
 change anything in the game folder; download or share game data or Oodle. See
 [Terms and licence](terms.md).
 
+**Its own project:** each game reader is its own small project with its own licence file,
+releases and issue tracker, so it can be installed, updated, maintained - or
+withdrawn on a rights holder's request - on its own, without affecting the
+viewer or the other tools.
+
 **Notice:** not affiliated with or endorsed by Ubisoft; trademarks belong to
 their owners. The levels stay on your machine for your personal analysis: do
 not share or redistribute them. Meant for non-commercial use; do not use the
@@ -47,5 +52,5 @@ through the GitHub profile; we respond within 48 hours and remove on request.
 |---|---|
 | [Before you start](before-you-start.md) | installing, the Oodle library, where the files go |
 | [Maps](map.md) | building the levels, their parts, loading them in the viewer, checking them |
-| [Terms and licence](terms.md) | what the game's licence says, what this tool does and does not do |
+| [Terms and licence](terms.md) | what this tool reads, does and does not do, and writes |
 | [Command reference](cli-reference.md) | every option, generated from the program |

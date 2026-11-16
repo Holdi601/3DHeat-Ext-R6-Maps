@@ -18,6 +18,11 @@ maps, terms, command reference.
 
 ## Notice
 
+- Each game reader is its own small project with its own licence file,
+  releases and issue tracker, so it can be installed, updated, maintained - or
+  withdrawn on a rights holder's request - on its own, without affecting the
+  viewer or the other tools.
+- Nothing from the game is shipped: no game assets, no game code, no DLLs.
 - Not affiliated with or endorsed by Ubisoft. Rainbow Six Siege and all other
   trademarks belong to their owners.
 - The levels and the unpacked cache stay on your machine, for your personal
@@ -71,12 +76,6 @@ The game's archives are Oodle-compressed. This tool includes no Oodle library,
 links to none and looks for none: pass the path of an `oo2core_9_win64.dll`
 from software you have installed (`--oodle`, or `HEAT3D_OODLE`). It is used
 where it is and never copied. See `LICENSES.md`.
-
-## The game's licence
-
-Ubisoft's EULA (clause 1.2) restricts reverse engineering and derivative
-works; the docs' Terms page quotes it. Decide for yourself whether to use this
-tool.
 
 ## How the archives are read
 

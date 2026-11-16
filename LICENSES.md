@@ -22,14 +22,6 @@ an `oo2core_9_win64.dll` from software you have installed (`--oodle` or
 `HEAT3D_OODLE`). It is used where it is, for decompression on your machine
 only, and is never copied.
 
-## The game's licence
-
-Ubisoft's End-User Licence Agreement (in the installation, `Support\eula\`),
-clause 1.2, reads in part: "You shall not, directly or indirectly [...] (ii)
-reverse engineer, decompile, disassemble, adapt, reproduce, or create
-derivate works of this Product [...] in whole or in part". Decide for yourself
-whether to use this tool; see the documentation's Terms page.
-
 ## What it writes
 
 Levels (`.glb`, `.json`) and unpacked resources, on your machine, for your
@@ -55,6 +47,11 @@ From the files themselves. No other tool's code is used.
 The tool is meant for non-commercial, personal analysis.
 
 ## Notice and contact
+
+Each game reader is its own small project with its own licence file,
+releases and issue tracker, so it can be installed, updated, maintained - or
+withdrawn on a rights holder's request - on its own, without affecting the
+viewer or the other tools.
 
 Not affiliated with or endorsed by Ubisoft. Rainbow Six Siege and all other
 trademarks belong to their owners. Rights holders: open an issue or get in
