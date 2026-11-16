@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">
+  <rect width="760" height="210" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <g stroke="#555" stroke-width="1.5" fill="#f2f5fa">
+    <rect x="10" y="20" width="160" height="70" rx="8"/>
+    <rect x="10" y="120" width="160" height="70" rx="8"/>
+    <rect x="300" y="20" width="160" height="70" rx="8"/>
+    <rect x="300" y="120" width="160" height="70" rx="8"/>
+    <rect x="590" y="70" width="160" height="70" rx="8" fill="#fff4e6"/>
+  </g>
+  <g stroke="#555" stroke-width="1.5" marker-end="url(#arrow)">
+    <line x1="170" y1="55" x2="296" y2="55"/>
+    <line x1="170" y1="155" x2="296" y2="155"/>
+    <line x1="460" y1="55" x2="586" y2="95"/>
+    <line x1="460" y1="155" x2="586" y2="115"/>
+  </g>
+  <g text-anchor="middle" fill="#222">
+    <text x="90" y="50" font-weight="600">Match Replays</text>
+    <text x="90" y="72">MatchReplay\*.rec</text>
+    <text x="90" y="150" font-weight="600">Your installation</text>
+    <text x="90" y="172">the map archives</text>
+    <text x="380" y="50" font-weight="600">heat3d-r6-replay</text>
+    <text x="380" y="72">matches/*.3dheat</text>
+    <text x="380" y="150" font-weight="600">heat3d-r6-maps map</text>
+    <text x="380" y="172">levels/r6_*.glb</text>
+    <text x="670" y="100" font-weight="600">3DHeat viewer</text>
+    <text x="670" y="122">tracks on the floors</text>
+  </g>
+  <text x="235" y="143" text-anchor="middle" font-size="12" fill="#555">+ Oodle from software</text>
+  <text x="235" y="175" text-anchor="middle" font-size="12" fill="#555">you have installed</text>
+</svg>

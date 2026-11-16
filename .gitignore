@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+*.rec
+*.zip
+*.3dheat
+*.parquet
+out/
+
+# Levels, unpacked game data and libraries from a user's own install never belong here.
+*.glb
+*.gltf
+*.forge
+*.bin
+*.dll
+*.depgraphbin
+unpacked/
+levels/
+.claude/
+*.jsonl
