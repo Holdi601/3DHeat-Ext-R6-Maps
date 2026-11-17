@@ -9,3 +9,6 @@
 - Notice: not affiliated with Ubisoft; levels stay on your machine and are not to be shared; non-commercial; no AI training; rights-holder contact.
 - The updater lives in this tool's package (`heat3d_ext_r6maps.update`), checking Holdi601/3DHeat-Ext-R6-Maps.
 - Docs: a documentation site (`docs/`: before you start, maps, terms, command reference), `LICENSES.md`.
+- Installs with one pip line from the release zip, no Git needed; a pip install knows its version and updates itself with pip when a newer release is out.
+- The version comes from the package's metadata when there is no VERSION file (a pip install).
+- README: a quick start for new users.

@@ -32,6 +32,49 @@ maps, terms, command reference.
 - Rights holders: open an issue or get in touch through the GitHub profile; we
   respond within 48 hours and remove on request.
 
+## Quick start for new users
+
+You need: Windows, [Python](https://www.python.org/downloads/) 3.10 or later
+("Add python.exe to PATH" ticked in its installer), Rainbow Six Siege
+installed (the tool does not search for it: you give its folder, the one
+holding the game's `.forge` files, for example
+`C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\games\Tom Clancy's Rainbow Six Siege`
+or `...\steamapps\common\Tom Clancy's Rainbow Six Siege`), a 64-bit `oo2core_9_win64.dll` (Oodle)
+from software you have installed (the tool includes none and looks for none:
+you give its path), and about 10 GB of free disk space for a cache. No Git is
+needed.
+
+1. Install the tool (one line, in PowerShell or a command prompt):
+
+   ```bash
+   python -m pip install https://github.com/Holdi601/3DHeat-Ext-R6-Maps/archive/refs/tags/v0.1.0.zip
+   ```
+
+2. List the maps of your installation, then build all of them (or name some,
+   e.g. `map Clubhouse Bank ...`):
+
+   ```bash
+   heat3d-r6-maps map --list --game "<your game folder>"
+   heat3d-r6-maps map --all --game "<your game folder>" --out levels --oodle "<path to oo2core_9_win64.dll>"
+   ```
+
+   `HEAT3D_R6_GAME` and `HEAT3D_OODLE` can hold the two paths instead.
+3. The output is, per map, `levels\r6_<Map>.glb` (the level, 30 to 70 MB) and
+   `levels\r6_<Map>.json` (what is in it) in the `--out` folder. The first run
+   unpacks the game's archives into `levels\.unpacked` (a few minutes, about
+   10 GB, resumable; `--cache <folder>` puts it elsewhere): delete it when the
+   levels are built.
+4. Open it in the [3DHeat viewer](https://github.com/Holdi601/3DHeat#quick-start):
+   download the viewer (**Code -> Download ZIP**, unpack) and double-click
+   `start.bat`; it offers to install [Node.js](https://nodejs.org/) when it is
+   missing and opens Chrome or Edge at `http://127.0.0.1:5273`. There, **Background / level ->
+   3D model...** and pick `r6_<Map>.glb` once: the viewer keeps it in its level
+   library and from then on offers it for matches on that map (matches come
+   from [3DHeat-Ext-R6](https://github.com/Holdi601/3DHeat-Ext-R6)).
+
+When a new release is out, the tool says so when it starts and offers to
+update itself (`python -m heat3d_ext_r6maps.update` does the same).
+
 ## Use
 
 ```
