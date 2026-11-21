@@ -32,14 +32,24 @@ maps, terms, command reference.
 - Rights holders: open an issue or get in touch through the GitHub profile; we
   respond within 48 hours and remove on request.
 
-## Quick start for new users
+## The standalone program
+
+No Python needed: download `heat3d-r6-maps-<version>-windows-x64.zip` from the
+[latest release](https://github.com/Holdi601/3DHeat-Ext-R6-Maps/releases/latest), check it against
+`SHA256SUMS`, unpack it and start `heat3d-r6-maps.exe`. Its window asks for your installation's folder
+(*Choose folder...*; nothing is searched for), says what is missing (the game folder, the Oodle library
+from that installation, disk space), lists the maps as new, changed by a game update, built by an older
+version or up to date, and builds the ones you pick into the 3DHeat levels folder. It asks before it
+updates itself. `heat3d-r6-maps --help` lists its commands (every command below runs through it too).
+The 3DHeat app's Extractors panel can install and update it for you. See
+[Before you start](https://holdi601.github.io/3DHeat-Ext-R6-Maps/before-you-start.html).
+
+## Quick start for new users (Python)
 
 You need: Windows, [Python](https://www.python.org/downloads/) 3.10 or later
 ("Add python.exe to PATH" ticked in its installer), Rainbow Six Siege
 installed (the tool does not search for it: you give its folder, the one
-holding the game's `.forge` files, for example
-`C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\games\Tom Clancy's Rainbow Six Siege`
-or `...\steamapps\common\Tom Clancy's Rainbow Six Siege`), a 64-bit `oo2core_9_win64.dll` (Oodle)
+holding the game's `.forge` files), a 64-bit `oo2core_9_win64.dll` (Oodle)
 from software you have installed (the tool includes none and looks for none:
 you give its path), and about 10 GB of free disk space for a cache. No Git is
 needed.
@@ -116,8 +126,9 @@ version.
 ## Oodle
 
 The game's archives are Oodle-compressed. This tool includes no Oodle library,
-links to none and looks for none: pass the path of an `oo2core_9_win64.dll`
-from software you have installed (`--oodle`, or `HEAT3D_OODLE`). It is used
+links to none and searches for none: pass the path of an `oo2core_9_win64.dll`
+from software you have installed (`--oodle`, or `HEAT3D_OODLE`). The standalone
+program also takes one from the game folder you chose, when it is there. It is used
 where it is and never copied. See `LICENSES.md`.
 
 ## How the archives are read

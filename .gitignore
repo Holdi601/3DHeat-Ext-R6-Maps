@@ -19,3 +19,4 @@ unpacked/
 levels/
 .claude/
 *.jsonl
+dist-standalone/

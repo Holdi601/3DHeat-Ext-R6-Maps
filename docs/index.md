@@ -52,9 +52,7 @@ through the GitHub profile; we respond within 48 hours and remove on request.
 
 You need Windows, Python 3.10 or later ("Add python.exe to PATH" ticked in its
 installer), Rainbow Six Siege installed (you give its folder, the one holding
-the game's `.forge` files, for example
-`C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\games\Tom Clancy's Rainbow Six Siege`
-or `...\steamapps\common\Tom Clancy's Rainbow Six Siege`), a 64-bit `oo2core_9_win64.dll` from software you
+the game's `.forge` files), a 64-bit `oo2core_9_win64.dll` from software you
 have installed (you give its path), and about 10 GB of free disk space for a
 cache; no Git. More in [Before you start](before-you-start.md).
 

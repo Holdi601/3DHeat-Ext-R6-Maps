@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "heat3d-ext-r6maps"
-version = "0.1.0"
+version = "0.2.0"
 description = "Rainbow Six Siege maps from your own install into 3D levels for the 3DHeat viewer"
 readme = "README.md"
 license = { text = "MIT" }
@@ -20,4 +20,4 @@ test = ["pytest>=8.0"]
 heat3d-r6-maps = "heat3d_ext_r6maps.cli:main"
 
 [tool.setuptools]
-packages = ["heat3d_ext_r6maps"]
+packages = ["heat3d_ext_r6maps", "heat3d_ext_r6maps.app"]

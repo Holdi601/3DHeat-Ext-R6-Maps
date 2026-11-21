@@ -1,0 +1,7 @@
+{
+  "spec": "heat3d_ext_r6maps.standalone_spec",
+  "collect_submodules": ["numpy"],
+  "platforms": {
+    "windows-x64": {"build": true, "tested": false, "note": "the game runs on Windows; CI builds, tests and smoke-runs; you choose the game folder, the Oodle library comes from your own installation"}
+  }
+}

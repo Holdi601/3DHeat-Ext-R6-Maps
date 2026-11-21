@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.2.0
+
+- A standalone program for Windows (no Python needed), built by CI with a `SHA256SUMS` file. Without
+  arguments it opens a window: the game folder you choose (nothing is searched for), what is missing (the
+  folder, the Oodle library from that installation, disk space), the maps as new / changed by a game update /
+  built by an older version / up to date, and building the picked ones one at a time into the 3DHeat levels
+  folder (`<levels>/r6siege`).
+- Each built map is recorded in `<levels>/r6siege/.heat3d-extract.json` (extractor version, size and SHA-256 of
+  its archives), so maps that are new after a game update are found and only those built: `status --json`,
+  `extract --new` / `--changed` / `--outdated` / `<map>...`, `--progress-json`.
+- Updates ask first (update now / later / skip this version) unless automatic updates were chosen
+  (`--auto-update`, the window's checkbox, or `HEAT3D_AUTO_UPDATE=1`).
+- The version is written in the package (`__version__`), so the built program knows it too.
+- Docs: no example install paths; you give your own folder.
+
 ## 0.1.0
 
 - `heat3d-r6-maps`: reads your own installation of Rainbow Six Siege, for interoperability and personal analysis, and builds its maps as 3D levels for the 3DHeat viewer (formerly part of the R6 replay reader, 3DHeat-Ext-R6).
