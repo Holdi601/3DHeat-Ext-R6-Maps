@@ -83,7 +83,8 @@ jobs:
         run: |
           cd dl
           rm -f *.sha256
-          sha256sum *.zip *.tar.gz 2>/dev/null > SHA256SUMS
+          shopt -s nullglob  # a Windows-only tool has no .tar.gz
+          sha256sum *.zip *.tar.gz > SHA256SUMS
           cat SHA256SUMS
       - name: Draft release (left for a maintainer to publish)
         run: |
